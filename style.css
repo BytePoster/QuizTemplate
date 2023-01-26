@@ -1,0 +1,44 @@
+body {
+	background-color: grey;
+}
+
+#content {
+	margin: 0 auto;
+	max-width: 1000px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.answer {
+	padding: 10px;
+	margin: 10px;
+	border: black solid 1px;
+	border-radius: 20px;
+	cursor: pointer;
+	user-select: none;
+}
+
+#answer-explanation {
+	display: none;
+}
+
+#next-question {
+	display: block;
+	margin: 10px auto;
+	padding: 10px;
+	width: 100px;
+	background-color: grey;
+	text-align: center;
+	border: black solid 1px;
+	border-radius: 10px;
+	color: white;
+}
+
+.colorize[data-correct="true"] {
+	background-color: green;
+}
+
+.colorize:not([data-correct="true"]) {
+	background-color: red;
+}
